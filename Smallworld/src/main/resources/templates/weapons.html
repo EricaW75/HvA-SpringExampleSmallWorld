@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+
+    <title>My castle | weapons</title>
+</head>
+<header>Example project</header>
+
+<body>
+<div class="container">
+    <div class="col-md-5"></div>
+    <div class="col-md-5">
+
+<table>
+    <th> List of available weapons</th>
+    <tr>
+        <th>Object</th>
+    </tr>
+
+    <tr th:each="weapon:${weapons}" }>
+        <td th:text="${weapon.object}"></td>
+
+    </tr>
+</table>
+<br>
+<button class="btn-primary" id="But1"> Click me! </button>
+    </div>
+    <div class="col-md-2"></div>
+
+</div>
+<script>
+    $("table tr:odd").css("background-color", "#D3D3D3")
+    $("table tr:even").css("background-color", "#fff")
+
+
+    $("#But1").click(function () {
+        alert("Nosy bugger!");
+    });
+</script>
+</body>
+</html>

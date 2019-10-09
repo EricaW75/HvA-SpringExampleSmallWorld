@@ -1,0 +1,19 @@
+/* GENERAL STYLES FONT / COLOUR BEGIN */
+
+body {
+   /* background: url('../img/spook.jpg');*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+
+
+}
+
+header{
+    background: #ffdf7e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px #000 solid;
+    margin-bottom: 10px;
+
+}
